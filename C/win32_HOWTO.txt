@@ -1,0 +1,71 @@
+Windows compiliation of the LVIS_RELEASE_READER
+david lloyd rabine
+NASA GSFC Code 694.0 Laser Remote Sensing Lab
+Greenbelt, MD 20771
+david.rabine@gsfc.nasa.gov
+2006/04/20
+
+
+The source code for the 'lvis_release_reader' is very basic C code, and should compile on just about any compiler.
+
+Here are some steps to compile it for a windows platform:
+
+1) download / obtain a free compiler (LCC is a great one)
+
+http://www.cs.virginia.edu/~lcc-win32/
+
+current direct link:  ftp://ftp.cs.virginia.edu/pub/lcc-win32/lccwin32.exe
+
+2) install it on your machine (run the lccwin32.exe program and install on your machine)
+
+Just accept all the defaults if you're not sure.
+
+3) download and uncompress the lvis_release_reader which you can obtain from http://lvis.gsfc.nasa.gov
+
+for this example, I put the files in C:\LVIS
+
+4) create a new project in LCC and add the release reader source code
+
+Click to:
+Start -> Programs -> lcc-win32 -> lcc-win32
+
+In the wedit program (lcc's editor) click to:
+Project -> Create
+
+Now, enter a project name and where the home of the project is.
+For this example, I used lvisreader as my project name and C:\LVIS for both source and object directories.
+And make sure 'Console Application' is toggled (should be by default)
+Click 'Create'
+
+Click 'NO' to using the application skeletonl.
+
+Add the source code to the project:
+Just click on the lvis_release_reader.c and OK
+
+Click NEXT through all the defaults (or you can change things if you like)
+
+5) Compile our program:
+
+In the wedit program, click to:
+Compiler -> Make  (or you can just hit F9)
+
+That's it, you should have a lvisreader.exe in C:\LVIS now
+
+I would rename the .LGE, .LCE or .LGW file to something easier to type because you have to run this from the console.
+
+For example, as a test, I'm looking at some Panama data and I'm going to rename it to something short:
+
+rename LVIS_CR_1998_VECT_20060123_Barro_Colorado_Island.lge to bcdata.lge
+
+Load up the console:
+Start -> Programs -> Accessories -> Command Prompt
+
+Then in the console, I can just type:
+
+cd c:\lvis
+lvisreader bcdata.lge > bcdata.txt
+
+
+and you have ASCII data from the binary distribution file.
+
+
