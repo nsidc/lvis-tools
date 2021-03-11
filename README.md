@@ -21,11 +21,19 @@ This package requires:
 
 See each subdirectory for installation and usage.
 
+## Included Tools
+
+[C](C) reader for IceBridge LVIS data. Reads a binary data file from the Operation IceBridge LVIS instrument and prints the records to standard output. The tar file also contains how-to instructions for using the reader in win32.
+
+[IDL](IDL) readers for LVIS and LVIS-Global Hawk Level-1B and Level-2 data. (Readers were tested at NSIDC with IDL 8.3 on ubuntu.)
+
+For more information see:
+* [IceBridge LVIS L1B Geolocated Return Energy Waveforms](https://nsidc.org/data/ilvis1b.html)
+* [IceBridge LVIS-GH L1B Geolocated Return Energy Waveforms](https://nsidc.org/data/ilvgh1b.html)
+* [IceBridge LVIS L2 Geolocated Surface Elevation Product](https://nsidc.org/data/ilvis2.html)
+* [IceBridge LVIS-GH L2 Geolocated Surface Elevation Product](https://nsidc.org/data/ilvgh2.html)
+
 ## Usage
-
-See each subdirectory for installation and usage.
-
-## Troubleshooting
 
 See each subdirectory for installation and usage.
 
